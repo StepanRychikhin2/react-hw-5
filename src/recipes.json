@@ -4,7 +4,7 @@
       "time": 20,
       "servining": 6,
       "calories": 210,
-      "img": "./img/bugar.png",
+      "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/bugar.webp",
       "id": 1
     },
     {
@@ -12,7 +12,7 @@
         "time": 15,
         "servining": 3,
         "calories": 600,
-        "img": "./img/Tomatos.png",
+        "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/TOmato.webp",
         "id": 2
       },
       {
@@ -20,7 +20,7 @@
         "time": 30,
         "servining": 2,
         "calories": 320,
-        "img": "",
+        "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/potatto.webp",
         "id": 3
       },
       {
@@ -28,7 +28,7 @@
         "time": 40,
         "servining": 4,
         "calories": 700,
-        "img": "https://raw.githubusercontent.com/Tate-T/react-recipes-project/main/src/imgs/chickenLeg.webp",
+        "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/ris.webp",
         "id": 4
       }
   ]
