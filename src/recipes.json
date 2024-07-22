@@ -1,0 +1,34 @@
+[
+    {
+      "name": "Smoked salmon burger",
+      "time": 20,
+      "servining": 6,
+      "calories": 210,
+      "img": "./img/bugar.png",
+      "id": 1
+    },
+    {
+        "name": "tomato with Creamy Feta",
+        "time": 15,
+        "servining": 3,
+        "calories": 600,
+        "img": "./img/Tomatos.png",
+        "id": 2
+      },
+      {
+        "name": "Spisi potato salad",
+        "time": 30,
+        "servining": 2,
+        "calories": 320,
+        "img": "",
+        "id": 3
+      },
+      {
+        "name": "chiken biryani",
+        "time": 40,
+        "servining": 4,
+        "calories": 700,
+        "img": "https://raw.githubusercontent.com/Tate-T/react-recipes-project/main/src/imgs/chickenLeg.webp",
+        "id": 4
+      }
+  ]
