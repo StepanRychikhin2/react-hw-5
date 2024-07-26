@@ -1,26 +1,26 @@
 import Recipe from "../recipe/REcipe";
 import { nanoid } from "nanoid";
-// import style from"./List.module.css";
+import styled from "styled-components"
 
-// console.log(style)
-// const randomId = nanoid();
+const LIst = styled.ul`
+align-items: center;
+justify-content: center;
+display:flex;
+display: flex;
+list-style: none;
+`
 
 const List = ({ recipes }) => {
   let it = 0;
   return (
-    <ul >
+    <LIst >
       {recipes?.map((recipe) => {
         it++;
         return (
           <Recipe data={recipe} key={it} itherator={it} />
-          // <li key={recipe.id}>
-          //   Name: {recipe.name}
-          //   Year: {recipe.year}
-          //   Ingdients:
-          // </li>
         );
       })}
-    </ul>
+    </LIst>
   );
 };
 export default List;
