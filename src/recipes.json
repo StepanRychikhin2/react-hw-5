@@ -4,8 +4,11 @@
       "time": 20,
       "servining": 6,
       "calories": 210,
-      "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/bugar.webp",
-      "id": 1
+      "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/burgarrr.webp",
+      "id": 1,
+      "easy": "crimson",
+      "medium": "rgb(250, 226, 94)",
+      "hard": "rgb(250, 226, 94)"
     },
     {
         "name": "tomato with Creamy Feta",
@@ -13,7 +16,10 @@
         "servining": 3,
         "calories": 600,
         "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/TOmato.webp",
-        "id": 2
+        "id": 2,
+        "easy": "crimson",
+      "medium": "rgb(250, 226, 94)",
+      "hard": "rgb(250, 226, 94)"
       },
       {
         "name": "Spisi potato salad",
@@ -21,7 +27,10 @@
         "servining": 2,
         "calories": 320,
         "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/potatto.webp",
-        "id": 3
+        "id": 3,
+        "easy": "rgb(250, 226, 94)",
+      "medium": "crimson",
+      "hard": "rgb(250, 226, 94)"
       },
       {
         "name": "chiken biryani",
@@ -29,6 +38,9 @@
         "servining": 4,
         "calories": 700,
         "img": "https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/main/src/img/ris.webp",
-        "id": 4
+        "id": 4,
+        "easy": "rgb(250, 226, 94)",
+        "medium": "rgb(250, 226, 94)",
+        "hard": "crimson"
       }
   ]

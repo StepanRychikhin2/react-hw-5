@@ -6,20 +6,18 @@ import styled from "styled-components"
 
 const Listt = styled.ul`
 
-background-color: #d8db13;
+background-color: rgb(250, 226, 94)
 `
-const Br = styled.br`
 
-`
 function App() {
   return (
     
     <Listt className="App">
-      <Br/>
+
       <Title/>
-      <Br/>
+
 <List recipes={recipes}/>
-<Br/>
+
     </Listt>
   );
 }
