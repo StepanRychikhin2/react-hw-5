@@ -1,5 +1,4 @@
 import Recipe from "../recipe/REcipe";
-import { nanoid } from "nanoid";
 import styled from "styled-components";
 
 const HeadLIst = styled.ul`
