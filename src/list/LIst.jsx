@@ -1,26 +1,24 @@
 import Recipe from "../recipe/REcipe";
 import { nanoid } from "nanoid";
-import styled from "styled-components"
+import styled from "styled-components";
 
-const LIst = styled.ul`
-align-items: center;
-justify-content: center;
-display:flex;
-display: flex;
-list-style: none;
-`
+const HeadLIst = styled.ul`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  display: flex;
+  list-style: none;
+`;
 
 const List = ({ recipes }) => {
   let it = 0;
   return (
-    <LIst >
+    <HeadLIst>
       {recipes?.map((recipe) => {
         it++;
-        return (
-          <Recipe data={recipe} key={it} itherator={it} />
-        );
+        return <Recipe data={recipe} key={it} itherator={it} />;
       })}
-    </LIst>
+    </HeadLIst>
   );
 };
 export default List;

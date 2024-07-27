@@ -1,24 +1,18 @@
-import './App.css';
-import Title from './title/Title';
+import "./App.css";
+import Title from "./title/Title";
 import List from "./list/LIst";
 import recipes from "./recipes.json";
-import styled from "styled-components"
+import styled from "styled-components";
 
-const Listt = styled.ul`
 
-background-color: rgb(250, 226, 94)
-`
 
 function App() {
   return (
-    
-    <Listt className="App">
+    <div className="App">
+      <Title />
 
-      <Title/>
-
-<List recipes={recipes}/>
-
-    </Listt>
+      <List recipes={recipes} />
+    </div>
   );
 }
 

@@ -1,13 +1,13 @@
 // import styled from "styled-component";
 import styled from "styled-components";
 
-const Img = styled.img`
+const Photo = styled.img`
   width: 400px;
   height: 400px;
   border-radius: 20px;
   margin: 20px;
 `;
-const LIstOme = styled.div`
+const ListHeadInfo = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
@@ -16,19 +16,19 @@ const LIstOme = styled.div`
   border-radius: 20px;
   height: 50px;
 `;
-const Span = styled.span`
+const Text = styled.span`
   font-size: 15px;
   margin-right: 4px;
 `;
-const P = styled.p`
+const TextIn = styled.p`
   margin-left: 20px;
 `;
 
-const H2 = styled.h2`
+const MeinTitle = styled.h2`
   font-size: 20px;
 `;
 
-const LIstTwo = styled.div`
+const ListFooterDifficty = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
@@ -39,69 +39,58 @@ const LIstTwo = styled.div`
   gap: 20px;
 `;
 
-const PTwo = styled.p`
+const ListComponents = styled.p`
   display: flex;
   justify-content: center;
   align-items: center;
-  // background-color: rgb(252, 64, 64);
   border-radius: 20px;
   width: 70px;
   height: 40px;
   color: #fff;
 `;
-const LIsttt = styled.div`
+const ListFooterInf = styled.div`
   background-color: #fff;
   width: 430px;
   border-radius: 20px;
 `;
 
-// function whatColr() {
- 
-// }
-
-// let rel = {backgroundColor: "red"};
-// function awdawd() {
-//   if (data.easy) {
-//     const awd = rel.textContent = {backgroundColor: "gray"};
-//     console.log("truee")
-//   } else if (data.medium) {
-//     const awd2 = rel.textContent = {backgroundColor: "red"};
-//     console.log("truee")
-//   } else if (data.hard) {
-//     console.log("truee")
-//     const awd3 = rel.textContent = {backgroundColor: "green"};
-//   }
- 
-// }
-// awdawd()
-// console.log(rel)
+const ImageFooterSvg = styled.img`
+  width: 20px;
+  height: 20px;
+`;
 
 const Recipe = ({ data, itherator }) => {
   let i = 0;
 
   return (
     <li key={itherator}>
-      <Img src={data.img} alt={data.name} />
-      <H2>{data.name}</H2>
-      <LIstOme>
-        <P>
-          <Span>{data.time}</Span>min
-        </P>
-        <P>
-          <Span>{data.servining}</Span>servicios
-        </P>
-        <P>
-          <Span>{data.calories}</Span>calories
-        </P>
-      </LIstOme>
-      <LIsttt>
-        <h2>Difficulty</h2>
-        <LIstTwo>
-          <PTwo style={{background:data.easy}} >Easy</PTwo>
-          <PTwo style={{background:data.medium}}>Medium</PTwo>
-          <PTwo style={{background:data.hard}}>Hard</PTwo>
-        </LIstTwo>
-      </LIsttt>
+      <Photo src={data.img} alt={data.name} />
+      <MeinTitle>{data.name}</MeinTitle>
+      <ListHeadInfo>
+        <TextIn>
+          <Text><ImageFooterSvg src="https://github.com/StepanRychikhin2/react-hw-5/blob/main/src/img/clock.svg" alt="clock"  />{data.time}</Text>min
+        </TextIn>
+        <TextIn>
+          <Text><ImageFooterSvg src="https://github.com/StepanRychikhin2/react-hw-5/blob/main/src/img/clock.svg" alt="clock"  />{data.servining}</Text>servicios
+        </TextIn>
+        <TextIn>
+          <Text><ImageFooterSvg src="https://github.com/StepanRychikhin2/react-hw-5/blob/main/src/img/clock.svg" alt="clock"  />{data.calories}</Text>calories
+        </TextIn>
+      </ListHeadInfo>
+      <ListFooterInf>
+        <MeinTitle>Difficulty</MeinTitle>
+        <ListFooterDifficty>
+          <ListComponents style={{ background: data.easy }}>
+            Easy
+          </ListComponents>
+          <ListComponents style={{ background: data.medium }}>
+            Medium
+          </ListComponents>
+          <ListComponents style={{ background: data.hard }}>
+            Hard
+          </ListComponents>
+        </ListFooterDifficty>
+      </ListFooterInf>
     </li>
   );
 };
