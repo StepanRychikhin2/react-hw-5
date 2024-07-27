@@ -57,6 +57,7 @@ const ListFooterInf = styled.div`
 const ImageFooterSvg = styled.img`
   width: 20px;
   height: 20px;
+  margin-right: 5px;
 `;
 
 const Recipe = ({ data, itherator }) => {
@@ -68,13 +69,13 @@ const Recipe = ({ data, itherator }) => {
       <MeinTitle>{data.name}</MeinTitle>
       <ListHeadInfo>
         <TextIn>
-          <Text><ImageFooterSvg src="https://github.com/StepanRychikhin2/react-hw-5/blob/main/src/img/clock.svg" alt="clock"  />{data.time}</Text>min
+          <Text><ImageFooterSvg src="https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/3f76d9ae4ac76183db8601c687c560e8a31d3558/src/img/clock.svg" alt="clock"  />{data.time}</Text>min
         </TextIn>
         <TextIn>
-          <Text><ImageFooterSvg src="https://github.com/StepanRychikhin2/react-hw-5/blob/main/src/img/clock.svg" alt="clock"  />{data.servining}</Text>servicios
+          <Text><ImageFooterSvg src="https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/3f76d9ae4ac76183db8601c687c560e8a31d3558/src/img/coloCalors.svg" alt="clock"  />{data.servining}</Text>servicios
         </TextIn>
         <TextIn>
-          <Text><ImageFooterSvg src="https://github.com/StepanRychikhin2/react-hw-5/blob/main/src/img/clock.svg" alt="clock"  />{data.calories}</Text>calories
+          <Text><ImageFooterSvg src="https://raw.githubusercontent.com/StepanRychikhin2/react-hw-5/3f76d9ae4ac76183db8601c687c560e8a31d3558/src/img/analitick.svg" alt="clock"  />{data.calories}</Text>calories
         </TextIn>
       </ListHeadInfo>
       <ListFooterInf>
